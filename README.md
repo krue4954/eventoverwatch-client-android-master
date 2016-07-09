@@ -1,16 +1,13 @@
-# [Traccar Client for Android](https://www.traccar.org/client)
+# [Event Overwatch]
 
-[![](https://play.google.com/intl/en_us/badges/images/badge_new.png)](https://play.google.com/store/apps/details?id=org.traccar.client)
 
 ## Contacts
 
-Author - Anton Tananaev ([anton.tananaev@gmail.com](mailto:anton.tananaev@gmail.com))
-
-Website - [https://www.traccar.org/client](https://www.traccar.org/client)
+Michael
 
 ## Overview
 
-Traccar Client is an Android GPS tracking application. It can work with Traccar open source server software.
+TBD
 
 ## License
 

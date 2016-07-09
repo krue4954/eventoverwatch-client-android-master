@@ -17,6 +17,7 @@ package org.eventoverwatch.client;
 
 import android.net.Uri;
 
+//TODO: Replace long URL (in HTTP? who does that?) with secure JSON transport.
 public class ProtocolFormatter {
 
     public static String formatRequest(String address, int port, Position position) {

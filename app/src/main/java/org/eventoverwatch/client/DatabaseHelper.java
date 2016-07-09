@@ -67,7 +67,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
-        db = getWritableDatabase("password");
+        db = getWritableDatabase("password"); //TODO: Update password after testing phase. Use user's login.
     }
 
     @Override

@@ -22,6 +22,7 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+//TODO: More stuff to replace with the URL transport.
 public class RequestManager {
 
     private static final int TIMEOUT = 15 * 1000;

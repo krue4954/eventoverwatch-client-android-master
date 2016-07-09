@@ -41,6 +41,7 @@ import net.sqlcipher.database.SQLiteDatabase;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
+import java.util.UUID;
 
 @SuppressWarnings("deprecation")
 public class MainActivity extends PreferenceActivity implements OnSharedPreferenceChangeListener {
@@ -61,7 +62,7 @@ public class MainActivity extends PreferenceActivity implements OnSharedPreferen
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        SQLiteDatabase.loadLibs(this);
+        SQLiteDatabase.loadLibs(this); // Initializes SQLCipher Database Libraries
 
         super.onCreate(savedInstanceState);
 
@@ -69,6 +70,7 @@ public class MainActivity extends PreferenceActivity implements OnSharedPreferen
             removeLauncherIcon();
         }
 
+        // TODO: Don't store server IP in shared prefs. Find another place to store. Memory?
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         addPreferencesFromResource(R.xml.preferences);
         initPreferences();
@@ -222,7 +224,7 @@ public class MainActivity extends PreferenceActivity implements OnSharedPreferen
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
         if (!sharedPreferences.contains(KEY_DEVICE)) {
-            String id = String.valueOf(new Random().nextInt(900000) + 100000);
+            String id = UUID.randomUUID().toString();
             sharedPreferences.edit().putString(KEY_DEVICE, id).commit();
             ((EditTextPreference) findPreference(KEY_DEVICE)).setText(id);
         }

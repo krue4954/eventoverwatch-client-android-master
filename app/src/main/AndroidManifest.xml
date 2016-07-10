@@ -31,13 +31,6 @@
 
         <activity android:name="org.eventoverwatch.client.AboutActivity"/>
 
-        <activity
-            android:name="org.eventoverwatch.client.ShortcutActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
-
         <service android:name="org.eventoverwatch.client.TrackingService" />
 
         <service android:name="org.eventoverwatch.client.TrackingService$HideNotificationService" />

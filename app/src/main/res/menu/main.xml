@@ -2,13 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/status"
-        android:title="@string/menu_status"
+        android:id="@+id/map"
+        android:title="@string/menu_map"
         android:showAsAction="always" />
 
     <item
-        android:id="@+id/shortcuts"
-        android:title="@string/menu_shortcuts"
+        android:id="@+id/status"
+        android:title="@string/menu_status"
         android:showAsAction="never" />
 
     <item

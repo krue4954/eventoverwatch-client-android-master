@@ -144,20 +144,6 @@ public class MainActivity extends PreferenceActivity implements OnSharedPreferen
         }
     }
 
-    private void addShortcuts(boolean start, int name) {
-        Intent shortcutIntent = new Intent(Intent.ACTION_MAIN);
-        shortcutIntent.setComponent(new ComponentName(getPackageName(), ShortcutActivity.class.getCanonicalName()));
-        shortcutIntent.putExtra(ShortcutActivity.EXTRA_ACTION, start);
-
-        Intent installShortCutIntent = new Intent("com.android.launcher.action.INSTALL_SHORTCUT");
-        installShortCutIntent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
-        installShortCutIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, getString(name));
-        installShortCutIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE,
-                Intent.ShortcutIconResource.fromContext(this, R.mipmap.ic_launcher));
-
-        sendBroadcast(installShortCutIntent);
-    }
-
     private boolean hasPermission(String permission) {
         if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.LOLLIPOP_MR1) {
             return true;
@@ -206,12 +192,11 @@ public class MainActivity extends PreferenceActivity implements OnSharedPreferen
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.status) {
-            startActivity(new Intent(this, StatusActivity.class));
+        if (item.getItemId() == R.id.map) {
+            //startActivity(new Intent(this, MapActivity.class));
             return true;
-        } else if (item.getItemId() == R.id.shortcuts) {
-            addShortcuts(true, R.string.shortcut_start);
-            addShortcuts(false, R.string.shortcut_stop);
+        } else if (item.getItemId() == R.id.status) {
+            startActivity(new Intent(this, StatusActivity.class));
             return true;
         } else if (item.getItemId() == R.id.about) {
             startActivity(new Intent(this, AboutActivity.class));

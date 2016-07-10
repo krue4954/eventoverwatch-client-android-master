@@ -129,7 +129,8 @@ public class TrackingController implements PositionProvider.PositionListener, Ne
     private void log(String action, Position position) {
         if (position != null) {
             action += " (" +
-                    "id:" + position.getId() +
+                    "dId:" + position.getDeviceId() +
+                    " id:" + position.getId() +
                     " time:" + position.getTime().getTime() / 1000 +
                     " lat:" + position.getLatitude() +
                     " lon:" + position.getLongitude() + ")";

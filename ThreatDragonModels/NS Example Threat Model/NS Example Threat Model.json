@@ -8,11 +8,6 @@
     "contributors": [],
     "diagrams": [
       {
-        "title": "On Device",
-        "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
-      },
-      {
         "title": "Architecture",
         "thumbnail": "./public/content/images/thumbnail.jpg",
         "id": 1

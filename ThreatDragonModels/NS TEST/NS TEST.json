@@ -1,0 +1,32 @@
+{
+  "summary": {
+    "title": "NS TEST",
+    "owner": "MICHAEL",
+    "description": "TEST"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "TONY"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "ARCHITECTURE 1",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      },
+      {
+        "title": "ON DEVICE",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 1
+      },
+      {
+        "title": "DATABASE",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 2
+      }
+    ],
+    "reviewer": "JENI"
+  }
+}

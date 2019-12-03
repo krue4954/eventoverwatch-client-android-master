@@ -1,0 +1,23 @@
+{
+  "summary": {
+    "title": "NS Example Threat Model",
+    "owner": "Michael Krueger",
+    "description": "This is an example"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "On Device",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      },
+      {
+        "title": "Architecture",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 1
+      }
+    ],
+    "reviewer": "Michael Krueger"
+  }
+}

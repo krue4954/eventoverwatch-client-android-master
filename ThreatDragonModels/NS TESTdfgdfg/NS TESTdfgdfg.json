@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "title": "NS TESTdfgdfg",
+    "owner": "xfg",
+    "description": "dfg"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "dfgdfg",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ],
+    "reviewer": "dfg"
+  }
+}
